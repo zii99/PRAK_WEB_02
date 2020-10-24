@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <p align="right"><label for="date">Date</label>
+        <input type="date" name="date" id="date" value="2020-10-24"><br></p>
+        <fieldset id="personal_information">
+            <legend>PERSONAL INFORMATION</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="name">Name  : </label>
+                        <input type="text" name="name" id="name">
+                    </td>
+                </tr>
+                    <tr>
+                        <td>
+                            <label for="birth_date">Birth Date  : </label>
+                            <input type="date" name="birth_date" id="birth_date" value="2020-10-24">
+                        </td>
+                    </tr>
+            </table>
+            </fieldset> <br>
+    
+            <fieldset id="contact_information">
+                <legend>CONTACT INFORMATION</legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="address">ADDRESS    : </label>
+                            <textarea name="address" id="address"></textarea>
+                        </td>
+                        <tr>
+                            <td>
+                                <label for="city">CITY  : </label>
+                                <input type="text" name="city" id="city">
+                            </td>
+                            <td>
+                                <label for="province">PROVINCE/STATE    : </label>
+                                <input type="text" name="province" id="province">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="zip_code">ZIP CODE  : </label>
+                                <input type="text" name="zip_code" id="zip_code">
+                            </td>
+                            <td>
+                                <label for="country">COUNTRY    : </label>
+                                <input type="text" name="country" id="country">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="phone">PHONE    : </label>
+                                <input type="text" name="phone" id="phone">
+                            </td>
+                            <td>
+                                <label for="email">EMAIL    : </label>
+                                <input id="email" type="email" name="email" placeholder="user@example.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="membership">MEMBERSHIP TYPE     : </label>
+                                <label><input type="radio" name="membership" value="reguler"/> REGULER </label>
+                                <label><input type="radio" name="membership" value="premium"/> PREMIUM </label>
+                                <label><input type="radio" name="membership" value="vip"/> VIP </label>
+                            </td>
+                        </tr>
+                </table>
+            </fieldset><br>
+
+        <fieldset id="course_information">
+            <legend>COURSE INFORMATION</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="course_name">COURSE NAME</label>
+                        <input type="text" name="course_name" id="course_name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="payment">PAYMENT DETAILS</label>
+                        <label><input type="radio" name="payment" value="cash"/> CASH </label>
+                        <label><input type="radio" name="payment" value="cheque"/> CHEQUE </label>
+                        <label><input type="radio" name="payment" value="credit_card"/> CREDIT CARD </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comment">COMMENT</label>
+                        <textarea name="comment" id="comment"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <ul>
+                <input type="submit" value="SUBMIT">
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
